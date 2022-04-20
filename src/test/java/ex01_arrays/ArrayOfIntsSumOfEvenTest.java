@@ -9,25 +9,25 @@ class ArrayOfIntsSumOfEvenTest {
     private final ArrayOfInts arrayOfInts = new ArrayOfInts();
 
     @Test
-    void Empty() {
+    void empty() {
         int result = arrayOfInts.sumOfEven(new int[]{});
         assertEquals(0, result);
     }
 
     @Test
-    void OnlyEven() {
+    void onlyEven() {
         int result = arrayOfInts.sumOfEven(new int[]{2,4,6,8});
         assertEquals(20, result);
     }
 
     @Test
-    void EvenWithUneven() {
+    void evenWithUneven() {
         int result = arrayOfInts.sumOfEven(new int[]{1,2,3,4,6,8});
         assertEquals(20, result);
     }
 
     @Test
-    void MinusEven() {
+    void minusEven() {
         int result = arrayOfInts.sumOfEven(new int[]{-2,-4,-6,-8});
         assertEquals(-20, result);
     }
