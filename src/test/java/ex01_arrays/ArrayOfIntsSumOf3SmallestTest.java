@@ -11,9 +11,16 @@ class ArrayOfIntsSumOf3SmallestTest {
 
     @Test
     void OnlyThree() {
-        int result = arrayOfInts.sumOf3SmallestInts(new int[]{1, 2, 3, 4, 5, 6, 7});
+        int result = arrayOfInts.sumOf3SmallestInts(new int[]{1, 2, 3});
         assertEquals(6, result);
     }
+
+    @Test
+    void 3More() {
+        int result = arrayOfInts.sumOf3SmallestInts(new int[]{10, 7, 5, 3, 2, 6, 7});
+        assertEquals(6, result);
+    }
+
 
 
 }
